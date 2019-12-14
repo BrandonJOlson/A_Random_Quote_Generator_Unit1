@@ -10,18 +10,52 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-
+var quotes = [
+  {
+    quote: "one",
+    source: "one"
+  },
+  {
+    quote: "two",
+    source: "two"
+  },
+  {
+    quote: "three",
+    source: "three"
+  },
+  {
+    quote: "four",
+    source: "four"
+  },
+  {
+    quote: "five",
+    source: "five",
+    citation: "five", 
+    year: "five"
+  }
+];
 
 
 /***
  * `getRandomQuote` function
 ***/
+function getRandomQuote(array) {  
+  return array[Math.floor(Math.random() * array.length)];
+  }
 
+console.log(getRandomQuote(quotes));
 
+// I can get random quotes printed to the console.
 
 /***
  * `printQuote` function
 ***/
+function printQuote(quotes) {
+  var randomQuote = getRandomQuote(array);
+  var task = '';
+}
+console.log(printQuote());
+
 
 
 
