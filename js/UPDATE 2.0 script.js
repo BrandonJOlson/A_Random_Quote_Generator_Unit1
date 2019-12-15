@@ -60,7 +60,7 @@ function printQuote() {
     } if (randomQuote.year) {
         generateQuote += '<span class="year">' + randomQuote.year + "</span> + </p>"
     }
-    generateQuote += document.getElementById('quote-box').innerHTML= (generateQuote)
+    document.getElementById('quote-box').innerHTML= generateQuote
  console.log(randomQuote);
 }
 
