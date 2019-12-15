@@ -39,22 +39,33 @@ var quotes = [
 /***
  * `getRandomQuote` function
 ***/
-function getRandomQuote(array) {  
-  return array[Math.floor(Math.random() * array.length)];
+function getRandomQuote() {  
+ 
+  return quotes[Math.floor(Math.random() * quotes.length)];
   }
 
-console.log(getRandomQuote(quotes));
 
-// I can get random quotes printed to the console.
+
 
 /***
  * `printQuote` function
 ***/
-function printQuote(quotes) {
-  var randomQuote = getRandomQuote(array);
-  var task = '';
+function printQuote() {
+  var randomQuote = getRandomQuote();
+  var generateQuote = "";
+  generateQuote += document.getElementById('quote-box').innerHTML= (randomQuote.quote);
+  generateQuote += '<p class="quote">' + randomQuote.quote + "</p>"
+  generateQuote += '<p class="source">' + randomQuote.source 
+    if (randomQuote.citation) {
+    randomQuote += '<span class="citation">' + randomQuote.citation + "</span>"
+    } if (randomQuote.year) {
+        '<span class="year">' + randomQuote.year + "</span> + </p>"
+    }
+    
+ console.log(randomQuote);
 }
-console.log(printQuote());
+
+
 
 
 
