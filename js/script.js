@@ -45,6 +45,8 @@ function getRandomQuote() {
   }
 
 
+//I'M HAVING TROUBLE SENDING THE CORRECT INFO TO THE DIV
+
 
 
 /***
