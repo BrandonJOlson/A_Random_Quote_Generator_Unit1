@@ -1,2 +1,2 @@
-# Unit 1 Project
-A Random Quote Generator
+# FSJS project 1 - A Random Quote Generator 
+
